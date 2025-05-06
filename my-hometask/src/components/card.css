@@ -1,0 +1,17 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    background-color: #219baa;
+}
+
+.price {
+    background-color: #2cc1d5;
+}
+
+/* 
+price: #24ad8d,#f46a5f, #333a44 */
+
+/* name:#218678, #c4534f, #282f37 */
