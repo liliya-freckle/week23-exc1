@@ -8,8 +8,8 @@ const Card = ({ details }) => {
         <div className='cardContainer'>
             <div className='name'>{name}</div>
             <div className='price'>{price} </div>
-            <div>{speed}</div>
-            <div>{limit}</div>
+            <div className='speed'>{speed}</div>
+            <div className='limit'>{limit}</div>
         </div>
 
 

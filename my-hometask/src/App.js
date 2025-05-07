@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Tarif from './components/MainPage';
+import MainPage from './components/MainPage';
+// import { TestComponent } from './components/TestComponent'
 
 function App() {
   return (
     <div className="App">
-      <Tarif />
+      <MainPage />
     </div>
   );
 }
