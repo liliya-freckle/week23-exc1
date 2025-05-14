@@ -6,7 +6,7 @@
 
 }
 
-.name {
+.turquoise .name {
     color: aliceblue;
     background-color: #219baa;
     min-height: 1.5rem;
@@ -14,9 +14,69 @@
 
 }
 
-.price {
+.turquoise .price {
     color: aliceblue;
     background-color: #2cc1d5;
+    min-height: 4rem;
+    align-content: center;
+}
+
+.green .name {
+    color: aliceblue;
+    background-color: #218678;
+    min-height: 1.5rem;
+    align-content: center;
+
+}
+
+.green .price {
+    color: aliceblue;
+    background-color: #24ad8d;
+    min-height: 4rem;
+    align-content: center;
+}
+
+.red .name {
+    color: aliceblue;
+    background-color: #c4534f;
+    min-height: 1.5rem;
+    align-content: center;
+
+}
+
+.red .price {
+    color: aliceblue;
+    background-color: #f46a5f;
+    min-height: 4rem;
+    align-content: center;
+}
+
+.black .name {
+    color: aliceblue;
+    background-color: #282f37;
+    min-height: 1.5rem;
+    align-content: center;
+
+}
+
+.black .price {
+    color: aliceblue;
+    background-color: #333a44;
+    min-height: 4rem;
+    align-content: center;
+}
+
+.grey .name {
+    color: aliceblue;
+    background-color: #4c4e50;
+    min-height: 1.5rem;
+    align-content: center;
+
+}
+
+.grey .price {
+    color: aliceblue;
+    background-color: #818181;
     min-height: 4rem;
     align-content: center;
 }
@@ -30,8 +90,3 @@
     color: #4b4c4e;
     background-color: #eeeeee;
 }
-
-/* 
-price: #24ad8d,#f46a5f, #333a44 */
-
-/* name:#218678, #c4534f, #282f37 */

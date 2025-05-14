@@ -1,16 +1,37 @@
-import React from 'react'
-import "./card.css"
+import React, { useState } from 'react';
+import "./card.css";
 
 
-const Card = ({ details }) => {
-    const { name, price, speed, limit } = details
+const Card = ({ details, color }) => {
+    const { name, price, speed, limit } = details;
+
+    const [isSelected, setIsSelected] = useState(false);
+    const [value, setValue] = useState(name);
+
+    function getValue(event) {
+        const newValue = event.target.value;
+        setValue(newValue);
+    }
+
     return (
-        <div className='cardContainer'>
-            <div className='name'>{name}</div>
+        <div className={`cardContainer ${color}`}>
+            {isSelected ?
+                (<input
+                    type="text"
+                    onChange={getValue}
+                    value={value}
+                    onBlur={() => setIsSelected(false)}
+                />
+                ) : (
+                    <div className="name" onClick={() => setIsSelected(true)}>
+                        {name}
+                    </div>
+                )}
+
             <div className='price'>{price} </div>
             <div className='speed'>{speed}</div>
             <div className='limit'>{limit}</div>
-        </div>
+        </div >
 
 
     )
