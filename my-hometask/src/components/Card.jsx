@@ -14,7 +14,8 @@ const Card = ({ details, color }) => {
     }
 
     return (
-        <div className={`cardContainer ${color}`}>
+        <div className={isSelected ? `cardContainer ${color} + selected` : ` cardContainer ${color}`
+        }>
             {isSelected ?
                 (<input
                     type="text"
@@ -24,7 +25,7 @@ const Card = ({ details, color }) => {
                 />
                 ) : (
                     <div className="name" onClick={() => setIsSelected(true)}>
-                        {name}
+                        {value}
                     </div>
                 )}
 
